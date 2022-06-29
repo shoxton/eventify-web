@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Header } from "../components/header";
+import { GuestLayout } from "../components/Layouts/GuestLayout";
 
 export default function Home() {
   return (
-    <>
+    <GuestLayout>
       <Head>
         <title>Eventify - Event management made simple</title>
       </Head>
@@ -85,6 +85,6 @@ export default function Home() {
             </div>
         </section>
       </main>
-    </>
+    </GuestLayout>
   );
 }

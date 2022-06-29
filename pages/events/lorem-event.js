@@ -1,8 +1,8 @@
-import { Callout } from "../../components/callout";
+import { GuestLayout } from "../../components/Layouts/GuestLayout";
 
 export default function Event() {
     return (
-        <>
+        <GuestLayout>
             <header className="bg-gradient-to-b from-white to-slate-50 py-5">
                 <div className="max-w-7xl mx-auto px-5 py-16 flex">
                     <div className="max-w-2xl">
@@ -13,7 +13,7 @@ export default function Event() {
                             <li>Online / Hybrid / Location</li>
                         </ul>
                     </div>
-                    <div className="w-80 ml-auto bg-white ring-1 ring-slate-200 rounded-md p-5">
+                    <div className="w-80 ml-auto bg-white ring-1 ring-slate-200 shadow-lg rounded-md p-5">
                         <span className="block mb-3 text-sm text-red-500 uppercase">Live now</span>
                         <div className="text-slate-500 mb-3">
                             <strong className="block font-medium text-xl">Welcome session & Networking</strong>
@@ -140,6 +140,6 @@ export default function Event() {
                 </div>
             </section>
 
-        </>
+        </GuestLayout>
     )
 }
