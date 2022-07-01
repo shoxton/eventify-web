@@ -1,6 +1,12 @@
+import { useRouter } from "next/router";
 import { GuestLayout } from "../components/Layouts/GuestLayout";
 
 export default function Login() {
+
+  const router = useRouter()
+
+  const login = () => router.push('/dashboard')
+
   return (
     <GuestLayout>
       <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
@@ -19,7 +25,7 @@ export default function Login() {
               </a>
             </p>
           </div>
-          <form className="mt-8 space-y-6" action="#" method="POST">
+          <div className="mt-8 space-y-6">
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="rounded-md -space-y-px">
               <div>
@@ -80,6 +86,7 @@ export default function Login() {
 
             <div>
               <button
+                onClick={login}
                 type="submit"
                 className="group relative w-full flex justify-center py-3 px-6 border border-transparent text-sm uppercase font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
@@ -87,7 +94,7 @@ export default function Login() {
                 Login
               </button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </GuestLayout>
