@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { Gear, House, MagnifyingGlass, Swap, Ticket } from "phosphor-react";
 import { Footer } from "../Footer";
@@ -15,13 +16,15 @@ export function DashboardLayout({children}) {
                 </div>
             </header>
             <main className="flex-1 flex">
-                <aside className="min-w-[300px] bg-white border-r border-slate-200 flex flex-col justify-between">
+                <aside className="min-w-[275px] bg-white border-r border-slate-200 flex flex-col justify-between">
                     <ul className="flex flex-col p-3 gap-3">
                         <li>
-                            <a href="" className={`p-3 text-lg flex items-center gap-3 rounded-md ${router.pathname == '/dashboard' ? 'bg-slate-100' : 'text-slate-900 hover:bg-slate-100'}`}>
-                                <House size={32} />
-                                <span>Home</span>
-                            </a>
+                            <Link href={`/dashboard`}>
+                                <a className={`p-3 text-lg flex items-center gap-3 rounded-md ${router.pathname == '/dashboard' ? 'bg-slate-100' : 'text-slate-900 hover:bg-slate-100'}`}>
+                                    <House size={32} />
+                                    <span>Home</span>
+                                </a>
+                            </Link>
                         </li>
                         <li>
                             <a href="" className="p-3 text-lg text-slate-900 flex items-center gap-3 rounded-md hover:bg-slate-100">
