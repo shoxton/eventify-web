@@ -5,7 +5,7 @@ import { DashboardLayout } from "../../components/Layouts/DashboardLayout";
 export default function Dashboard() {
     return (
         <DashboardLayout>
-            <div className="min-h-full w-full text-2xl p-12">
+            <div className="min-h-full w-full text-2xl p-8">
                 <h4 className="text-xl mb-3 text-slate-700">My ongoing events</h4>
                 <div className="grid grid-cols-4 gap-5">
                     <Link href={`/dashboard/events/1234`}>
