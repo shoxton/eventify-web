@@ -19,7 +19,7 @@ export function Header() {
                 name=""
                 id=""
                 placeholder="Find events"
-                className="appearance-none flex-1 max-w-lg px-4 py-3 text-slate-900 placeholder-slate-500 rounded-md ring-1 ring-slate-300 focus:outline-offset-2 focus:outline-indigo-500"
+                className="appearance-none flex-1 shadow max-w-lg px-4 py-3 text-slate-900 placeholder-slate-500 rounded-md ring-1 ring-slate-300 focus:outline-offset-2 focus:outline-indigo-500"
             />
             <nav className="ml-auto">
                 <ul className="flex gap-6">
