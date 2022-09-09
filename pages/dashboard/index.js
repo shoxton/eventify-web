@@ -13,19 +13,19 @@ export default function Dashboard() {
                             <div className="aspect-video relative flex bg-slate-200 p-3 bg-cover bg-no-repeat">
                                 <div className="absolute flex flex-col bottom-0 left-0 right-0 bg-black/60 backdrop-blur-md p-3">
                                     <span className="uppercase text-xs text-red-300 leading-tight">AO VIVO AGORA</span>
-                                    <span className="text-base text-white font-medium leading-relaxed my-1">Introdução às tecnologias Javascript</span>
+                                    <span className="text-base text-white font-medium leading-relaxed my-1">Performing live now</span>
                                     <div className="flex items-center gap-2">
                                         <div className="flex items-center">
                                             <div className="w-6 h-6 ring-1 ring-slate-300 rounded-full bg-white hover:shadow-sm bg-[url('https://i.pravatar.cc/16')] bg-contain"></div>
-                                            <div className="w-6 h-6 ring-1 ring-slate-300 rounded-full bg-white hover:shadow-sm -ml-1 bg-[url('https://i.pravatar.cc/16')] bg-contain"></div>
+                                            
                                         </div>
-                                        <span className="text-sm text-white/50">John Doe and Walter White</span>
+                                        <span className="text-sm text-white/50">Metallica</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="p-3">
                                 <p className="text-base text-slate-700 leading-none mb-1.5">
-                                    RocketseatXP 2022
+                                    Rock in Rio 2022
                                 </p>
                                 <span className="text-sm block uppercase text-slate-500 tracking-widest leading-none">ONLINE</span>
                             </div>
